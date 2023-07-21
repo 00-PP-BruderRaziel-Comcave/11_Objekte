@@ -45,22 +45,34 @@ let person = {
 };
 
 
-output(person);
-output(person["firstName"]);
-output(person.firstName);
-output(person.familyName);
-output(person.salary[1]);
-person.permission=false;
-output(person.permission);
-output(person.sayHello())
+// output(person);
+// output(person["firstName"]);
+// output(person.firstName);
+// output(person.familyName);
+// output(person.salary[1]);
+// person.permission=false;
+// output(person.permission);
+// output(person.sayHello())
 
 
-// const text =    "Ich bin " + person.firstName + 
-//                 " und verdiene " + person.salary[1] +
-//                 " p.a.";
+/******* Objekte 2 - Hierarchie *******/
+// deep - deeper - deepest
+// nested object{{{}}}
 
-//  output(text)
+let baikal = {
+                value: "10m",
+                deep: {
+                        deeper:{
+                            deepest:"Das Licht - auf 1642m!",
+                            temperature: "4 Grad Celsius"
+                        }
+                }
+}
 
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.temperature);
 
 /** Ausgabe */
 function output(outputData) {
